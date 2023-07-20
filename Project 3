@@ -1,0 +1,23 @@
+1. Created an S3 bucket with public access.
+
+2. Upload the code to the bucket.
+{
+      "Statement": [
+            {
+                  "Side": "PublicReadForGetBucketObjects":
+                  "Effect: "Allow",
+                  "Principal": "*",
+                  "Action": "s3:GetObject",
+                  "Resource": "arn:aws:s3:::chxtan/*"
+            }
+      ]
+}
+
+
+3. Host it by enabling, “Static Website Hosting”.
+
+4. Give access to the objects that are in the S3 bucket, by editing “Bucket Policy”.
+
+5. It will generate a link to access the static website.
+
+6. Using Route53, we can connect it to a specific domain name.
