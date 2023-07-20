@@ -1,1 +1,1 @@
-# AWS-S3-Bucket-Static-Website
+# Host a static website using AWS S3 bucket.
